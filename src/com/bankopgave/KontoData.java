@@ -1,5 +1,7 @@
 package com.bankopgave;
 
+import java.util.ArrayList;
+
 public class Konto {
 
     private int kontonummer;
@@ -11,6 +13,8 @@ public class Konto {
         this.ejernavn = ejernavn;
         this.saldo = saldo;
     }
+
+    ArrayList<kontier> kontier = new ArrayList<>();
 
     public int getKontonummer() {
         return kontonummer;
