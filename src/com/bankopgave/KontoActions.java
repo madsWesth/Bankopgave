@@ -1,6 +1,6 @@
 package com.bankopgave;
 
-public class Actions {
+public class KontoActions {
     //deposit metode
     //Transfer metode
     //Withdraw metode
