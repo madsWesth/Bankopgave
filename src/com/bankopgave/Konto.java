@@ -6,6 +6,12 @@ public class Konto {
     private String ejernavn;
     private double saldo;
 
+    Konto(int kontonummer, String ejernavn, double saldo) {
+        this.kontonummer = kontonummer;
+        this.ejernavn = ejernavn;
+        this.saldo = saldo;
+    }
+
     public int getKontonummer() {
         return kontonummer;
     }
