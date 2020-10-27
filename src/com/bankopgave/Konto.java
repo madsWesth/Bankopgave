@@ -2,9 +2,6 @@ package com.bankopgave;
 
 public class Konto {
 
-    //test comment
-
-
     private int kontonummer;
     private String ejernavn;
     private double saldo;
