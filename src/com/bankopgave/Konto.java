@@ -2,7 +2,7 @@ package com.bankopgave;
 
 public class Konto {
 
-
+    //test comment
 
 
     private int kontonummer;
