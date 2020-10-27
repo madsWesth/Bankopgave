@@ -8,13 +8,13 @@ public class KontoData {
     private String ejernavn;
     private double saldo;
 
-    KontoData(int kontonummer, String ejernavn, double saldo) {
+    Konto(int kontonummer, String ejernavn, double saldo) {
         this.kontonummer = kontonummer;
         this.ejernavn = ejernavn;
         this.saldo = saldo;
     }
 
-    ArrayList<KontoActions> kontoer = new ArrayList<>();
+    ArrayList<konti> konti = new ArrayList<>();
 
     public int getKontonummer() {
         return kontonummer;
@@ -39,4 +39,7 @@ public class KontoData {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+
+
 }
