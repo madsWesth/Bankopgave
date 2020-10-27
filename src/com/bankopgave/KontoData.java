@@ -14,7 +14,7 @@ public class KontoData {
         this.saldo = saldo;
     }
 
-    ArrayList<kontier> kontier = new ArrayList<>();
+    ArrayList<konti> konti = new ArrayList<>();
 
     public int getKontonummer() {
         return kontonummer;
