@@ -14,8 +14,6 @@ public class KontoData {
         this.saldo = saldo;
     }
 
-    ArrayList<KontoActions> kontoer = new ArrayList<>();
-
     ArrayList<KontoActions> konti = new ArrayList<>();
 
     public int getKontonummer() {
