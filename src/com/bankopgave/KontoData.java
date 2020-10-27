@@ -2,7 +2,7 @@ package com.bankopgave;
 
 import java.util.ArrayList;
 
-public class Konto {
+public class KontoData {
 
     private int kontonummer;
     private String ejernavn;
