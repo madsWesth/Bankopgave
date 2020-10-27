@@ -7,6 +7,7 @@ public class Konto{
     private int kontonummer;
     private String ejernavn;
     private double saldo;
+    private final double OVERFØRELSESGEBYR = 5;
 
     Konto(int kontonummer, String ejernavn, double saldo) {
         this.kontonummer = kontonummer;
@@ -40,9 +41,23 @@ public class Konto{
         this.saldo = saldo;
     }
 
+    public double indsæt(double indsætAmount) {
+        saldo =+ indsætAmount;
+        return saldo;
+    }
 
+    public double hæv(double hævAmount) {
+        saldo =- hævAmount;
+        return saldo;
+    }
 
-    //deposit metode
-    //Transfer metode
-    //Withdraw metode
+    public double overfør(double overførAmount, Konto konto) {
+        double totalToSubtract;
+        totalToSubtract = overførAmount + OVERFØRELSESGEBYR;
+
+        saldo =- overførAmount;
+        konto.saldo =+ overførAmount;
+        saldo =- OVERFØRELSESGEBYR;
+        return saldo;
+    }
 }
