@@ -1,7 +1,7 @@
 package com.bankopgave;
 
 public class Actions {
-    //deposit
-    //Transfer
-    //Withdraw
+    //deposit metode
+    //Transfer metode
+    //Withdraw metode
 }
