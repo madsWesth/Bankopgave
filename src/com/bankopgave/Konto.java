@@ -40,7 +40,7 @@ public class Konto{
         this.saldo = saldo;
     }
 
-    Konto = new Konto(1, "joe", 1000);
+
 
     //deposit metode
     //Transfer metode
