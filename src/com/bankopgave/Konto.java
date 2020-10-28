@@ -42,16 +42,16 @@ public class Konto{
     }
 
     public double indsæt(double indsætAmount) {
-        saldo =+ indsætAmount;
-        return saldo;
+        setSaldo(getSaldo() + indsætAmount);
+        return getSaldo();
     }
 
     public double hæv(double hævAmount) {
-        if (hævAmount > saldo) {
+        if (hævAmount > getSaldo()) {
             return -1;
         } else {
-            saldo =- hævAmount;
-            return saldo;
+            setSaldo(getSaldo() - hævAmount);
+            return getSaldo();
         }
     }
 
@@ -59,15 +59,15 @@ public class Konto{
         double totalToSubtract;
         totalToSubtract = overførAmount + OVERFØRELSESGEBYR;
 
-        if (totalToSubtract > saldo) {
+        if (totalToSubtract > getSaldo()) {
             return -1;
         } else {
             //removes amount+fee from original account
-            saldo =- totalToSubtract;
+            setSaldo(getSaldo() - totalToSubtract);
             //adds amount to target account
-            targetKonto.saldo =+ overførAmount;
+            targetKonto.setSaldo(getSaldo() + overførAmount);
 
-            return saldo;
+            return getSaldo();
         }
 
     }
