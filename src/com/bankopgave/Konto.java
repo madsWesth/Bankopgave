@@ -9,6 +9,15 @@ public class Konto{
     private double saldo;
     private final double OVERFØRELSESGEBYR = 5;
 
+    @Override
+    public String toString() {
+        return "Konto: " +
+                "\nKontonummer = " + kontonummer +
+                "\nEjernavn = '" + ejernavn + '\'' +
+                "\nSaldo = " + saldo +
+                ' ';
+    }
+
     Konto(int kontonummer, String ejernavn, double saldo) {
         this.kontonummer = kontonummer;
         this.ejernavn = ejernavn;
