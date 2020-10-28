@@ -47,8 +47,12 @@ public class Konto{
     }
 
     public double hæv(double hævAmount) {
-        saldo =- hævAmount;
-        return saldo;
+        if (hævAmount > saldo) {
+            return -1;
+        } else {
+            saldo =- hævAmount;
+            return saldo;
+        }
     }
 
     public double overfør(double overførAmount, Konto konto) {
