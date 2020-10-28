@@ -11,7 +11,7 @@ public class Konto{
 
     @Override
     public String toString() {
-        return "Konto: " +
+        return "\nKonto: " +
                 "\nKontonummer = " + kontonummer +
                 "\nEjernavn = '" + ejernavn + '\'' +
                 "\nSaldo = " + saldo +
