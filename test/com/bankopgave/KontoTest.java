@@ -44,5 +44,14 @@ class KontoTest {
         //795.0 cause we are transfering 200 and the fee is 5
         assertEquals(795.0, kontoSaldo, 0.0001);
         assertEquals(700.0, konto2Saldo, 0.0001);
+
+
+        // checks for invalid transfer amounts larger than saldo
+        double overførReturnValue;
+        Konto konto3 = new Konto(3, "Svend Bendt", 10.0);
+
+        overførReturnValue = (konto3.overfør(300.0, konto2));
+
+        assertEquals(-1, overførReturnValue, 0.0001);
     }
 }
