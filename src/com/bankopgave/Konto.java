@@ -65,7 +65,7 @@ public class Konto{
             //removes amount+fee from original account
             setSaldo(getSaldo() - totalToSubtract);
             //adds amount to target account
-            targetKonto.setSaldo(getSaldo() + overførAmount);
+            targetKonto.setSaldo(targetKonto.getSaldo() + overførAmount);
 
             return getSaldo();
         }
