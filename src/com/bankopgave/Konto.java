@@ -55,13 +55,20 @@ public class Konto{
         }
     }
 
-    public double overfør(double overførAmount, Konto konto) {
+    public double overfør(double overførAmount, Konto targetKonto) {
         double totalToSubtract;
         totalToSubtract = overførAmount + OVERFØRELSESGEBYR;
 
-        saldo =- overførAmount;
-        konto.saldo =+ overførAmount;
-        saldo =- OVERFØRELSESGEBYR;
-        return saldo;
+        if (totalToSubtract > saldo) {
+            return -1;
+        } else {
+            //removes amount+fee from original account
+            saldo =- totalToSubtract;
+            //adds amount to target account
+            targetKonto.saldo =+ overførAmount;
+
+            return saldo;
+        }
+
     }
 }
